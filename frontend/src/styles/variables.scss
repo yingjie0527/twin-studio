@@ -1,0 +1,290 @@
+// ============================================================
+// 数字孪生编辑器 - SCSS 全局变量
+// 被 vite.config.ts 通过 additionalData 全局注入
+// 使用方式: @use "@/styles/variables" as *; (自动注入，无需手动引入)
+// ============================================================
+
+// ==================== 颜色系统 ====================
+
+// 主色调 - 深邃蓝黑
+$dt-bg-primary: #0a0e1a;
+$dt-bg-secondary: #111827;
+$dt-bg-tertiary: #1a2035;
+$dt-bg-elevated: #1e293b;
+$dt-bg-surface: #243044;
+$dt-bg-hover: #2a3a52;
+$dt-bg-active: #334155;
+
+// 强调色 - 科技蓝
+$dt-accent-primary: #3b82f6;
+$dt-accent-secondary: #60a5fa;
+$dt-accent-light: #93c5fd;
+$dt-accent-dark: #2563eb;
+$dt-accent-glow: rgba(59, 130, 246, 0.3);
+
+// 文字颜色
+$dt-text-primary: #f1f5f9;
+$dt-text-secondary: #94a3b8;
+$dt-text-tertiary: #64748b;
+$dt-text-muted: #475569;
+$dt-text-inverse: #0f172a;
+
+// 边框颜色
+$dt-border-primary: #1e293b;
+$dt-border-secondary: #334155;
+$dt-border-accent: rgba(59, 130, 246, 0.3);
+$dt-border-hover: rgba(59, 130, 246, 0.5);
+
+// 状态颜色
+$dt-color-success: #22c55e;
+$dt-color-success-bg: rgba(34, 197, 94, 0.1);
+$dt-color-warning: #f59e0b;
+$dt-color-warning-bg: rgba(245, 158, 11, 0.1);
+$dt-color-danger: #ef4444;
+$dt-color-danger-bg: rgba(239, 68, 68, 0.1);
+$dt-color-info: #3b82f6;
+$dt-color-info-bg: rgba(59, 130, 246, 0.1);
+
+// 渐变
+$dt-gradient-primary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+$dt-gradient-bg: linear-gradient(180deg, #0a0e1a 0%, #111827 100%);
+$dt-gradient-card: linear-gradient(145deg, rgba(30, 41, 59, 0.8) 0%, rgba(17, 24, 39, 0.9) 100%);
+$dt-gradient-glow: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
+
+// ==================== 字体系统 ====================
+
+$font-sans: 'Outfit', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+$font-mono: 'JetBrains Mono', 'Consolas', monospace;
+
+$font-size-xs: 11px;
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-md: 15px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+$font-size-2xl: 20px;
+$font-size-3xl: 24px;
+$font-size-4xl: 28px;
+$font-size-5xl: 32px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-tight: 1.25;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+
+// ==================== 间距系统 ====================
+
+$spacing-0: 0;
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+$spacing-6: 24px;
+$spacing-8: 32px;
+$spacing-10: 40px;
+$spacing-12: 48px;
+$spacing-16: 64px;
+
+// ==================== 圆角系统 ====================
+
+$radius-none: 0;
+$radius-sm: 4px;
+$radius-base: 6px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-2xl: 20px;
+$radius-full: 9999px;
+
+// ==================== 阴影系统 ====================
+
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+$shadow-base: 0 2px 8px rgba(0, 0, 0, 0.4);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+$shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+$shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.7);
+$shadow-glow: 0 0 20px rgba(59, 130, 246, 0.15);
+$shadow-glow-lg: 0 0 40px rgba(59, 130, 246, 0.2);
+$shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+
+// ==================== 动效系统 ====================
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.25s ease;
+$transition-slow: 0.35s ease;
+$transition-spring: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+$duration-instant: 100ms;
+$duration-fast: 200ms;
+$duration-normal: 300ms;
+$duration-slow: 500ms;
+
+// ==================== 布局系统 ====================
+
+$z-index-dropdown: 100;
+$z-index-sticky: 200;
+$z-index-fixed: 300;
+$z-index-modal-backdrop: 400;
+$z-index-modal: 500;
+$z-index-popover: 600;
+$z-index-tooltip: 700;
+$z-index-toast: 800;
+
+$header-height: 44px;
+$sidebar-width: 280px;
+$panel-right-width: 300px;
+$statusbar-height: 28px;
+
+// ==================== 断点系统 ====================
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// ==================== 混入 (Mixins) ====================
+
+// 暗色卡片基础样式
+@mixin dt-card {
+  background: $dt-bg-elevated;
+  border: 1px solid $dt-border-primary;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-base;
+}
+
+// 暗色输入框样式
+@mixin dt-input {
+  background: $dt-bg-secondary;
+  border: 1px solid $dt-border-primary;
+  border-radius: $radius-base;
+  color: $dt-text-primary;
+  font-size: $font-size-base;
+  padding: $spacing-3 $spacing-4;
+  outline: none;
+  transition: border-color $transition-fast, box-shadow $transition-fast;
+
+  &::placeholder {
+    color: $dt-text-muted;
+  }
+
+  &:hover {
+    border-color: $dt-border-secondary;
+  }
+
+  &:focus {
+    border-color: $dt-accent-primary;
+    box-shadow: 0 0 0 3px $dt-accent-glow;
+  }
+}
+
+// 暗色按钮样式
+@mixin dt-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-2;
+  padding: $spacing-3 $spacing-5;
+  border-radius: $radius-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  cursor: pointer;
+  transition: all $transition-fast;
+  border: none;
+  outline: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+// 主按钮
+@mixin dt-button-primary {
+  @include dt-button;
+  background: $dt-gradient-primary;
+  color: #fff;
+  box-shadow: $shadow-glow;
+
+  &:hover {
+    box-shadow: $shadow-glow-lg;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// 次要按钮
+@mixin dt-button-secondary {
+  @include dt-button;
+  background: $dt-bg-surface;
+  color: $dt-text-primary;
+  border: 1px solid $dt-border-secondary;
+
+  &:hover {
+    background: $dt-bg-hover;
+    border-color: $dt-border-hover;
+  }
+}
+
+// 文字截断
+@mixin text-ellipsis($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+// 滚动条样式
+@mixin custom-scrollbar($width: 6px, $thumb-color: $dt-bg-active, $track-color: transparent) {
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+    border-radius: $radius-full;
+
+    &:hover {
+      background: $dt-text-muted;
+    }
+  }
+
+  // Firefox
+  scrollbar-width: thin;
+  scrollbar-color: $thumb-color $track-color;
+}
+
+// Flex 居中
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flex 列布局
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// 科技感发光边框
+@mixin glow-border($color: $dt-accent-primary, $opacity: 0.3) {
+  border: 1px solid rgba($color, $opacity);
+  box-shadow: 0 0 10px rgba($color, $opacity * 0.5);
+}
